@@ -1,0 +1,183 @@
+main.listen {
+    padding-bottom: 0;
+    background-color: $yellow;
+    position: relative;
+    z-index: 2;
+
+    .music-note {
+        position: absolute;
+        width: 50px;
+        z-index: 0;
+
+        &.left {
+            left: 15px;
+            top: 650px;
+            transform: rotate(-10deg);
+        }
+
+        &.right {
+            right: 15px;
+            top: 420px;
+            transform: rotate(20deg);
+        }
+
+        @media (min-width: 650px) {
+            width: 75px;
+
+            &.left {
+                left: 30px;
+            }
+            &.right {
+                right: 30px;
+            }
+        }
+        @media (min-width: 850px) {
+            width: 90px;
+
+            &.left {
+                left: 45px;
+            }
+            &.right {
+                right: 45px;
+            }
+        }
+        @media (min-width: 950px) {
+            width: 120px;
+        }
+    }
+
+    .wave {
+        height: 150px;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 350px;
+        left: 0;
+        right: 0;
+
+        svg {
+            height: 100%; 
+            width: 100%;
+
+            path {
+                stroke: none;
+                fill: $blue;
+            }
+        }
+
+        @media(max-width: 700px) {
+            height: 50px;
+        }
+    }
+
+    &:after {
+        content: '';
+        background-color: $blue;
+        position: absolute;
+        z-index: -1;
+        top: 450px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 500px;
+
+        @media(max-width: 700px) {
+            top: 400px;
+        }
+    }
+
+    .releases--wrapper {
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+
+        .releases--single {
+            margin: 0 75px 60px;
+            max-width: 300px;
+
+            .releases--cover {
+                margin-bottom: 15px;
+                box-sizing: border-box;
+
+                a {
+                    line-height: 0;
+                    display: block;
+                }
+
+                img {
+                    border: 3px solid $black;
+                    box-sizing: border-box;
+                    width: 100%;
+
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+
+            .releases--title {
+
+                a {
+                    font-family: "Ultra", serif;
+                    color: $black;
+                    font-size: 1.5rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
+// single release pages
+
+iframe {
+    display: block;
+    margin: auto;
+    border: 3px solid $black;
+    box-sizing: border-box;
+    background-color: $white;
+    background-image: url('../../images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+iframe.milwaukee {
+    width: 350px;
+    height: 522px;
+}
+iframe.self-titled {
+    width: 350px;
+    height: 588px;
+}
+iframe.millers-cave {
+    width: 350px;
+    height: 588px;
+}
+
+.release--date {
+    font-size: 1rem;
+}
+
+.release--link {
+    padding: 30px 0 60px;
+    display: inline-block; 
+    width: 150px;
+    margin: auto 30px;
+
+    a {
+        color: $black;
+        line-height: 1;
+
+        img {
+            border: 2px solid $black;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+}

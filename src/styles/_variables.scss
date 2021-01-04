@@ -1,0 +1,34 @@
+/** Colors */
+$white:        #fffdfb;
+$black:        #222;
+$red:          #B01F37;
+$blue:         #2E87AA;
+$orange:       #D1A75C;
+$yellow:       #D6C93D;
+
+/** Box Model  */
+$spacer:                2rem;
+
+
+@mixin transition-props {
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+@mixin epic-sides() { // https://codepen.io/MichaelArestad/pen/qltuk
+  position: relative;
+  z-index: 1;
+
+  &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: -5000px;
+      height: 100%;
+      width: 15000px;
+      z-index: -1;
+      @content;
+  }
+}

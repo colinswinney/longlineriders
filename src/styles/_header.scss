@@ -1,0 +1,114 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: transparent;
+
+    &.scrolled {
+        box-shadow: 1px 1px 1px rgba($black, 0.2);
+    }
+    
+    .navbar {
+        padding: 0 15px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    color: $white;
+                    font-size: 1.25rem;
+                    line-height: 1;
+
+                    img {
+                        width: 50px;
+                        filter: brightness(0) invert(1);
+
+                        &:hover {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:650px) {
+            padding: 0;
+            ul {
+                margin: auto;
+                justify-content: center;
+
+                li {
+                    padding: 10px 5px;
+
+                    a {
+                        font-size: 1rem;
+                    }
+                    &.logo {
+                        padding-bottom: 0;
+                        width: 100%;
+
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.home {
+        background-color: $white;
+
+        .navbar ul li {
+            a {
+                color: $red;
+    
+                img {
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    &.about {
+        background-color: $red;
+    }
+
+    &.listen {
+        background-color: $yellow;
+
+        .navbar ul li a {
+            color: $black;
+
+            img {
+                filter: brightness(0);
+            }
+        }
+    }
+
+    &.shows {
+        background-color: #243B55;
+    }
+
+    &.contact {
+        background-color: rgba(#090a0f, 0);
+        transition: all 0.2s ease;
+
+        &.scrolled {
+            background-color: rgba(#090a0f, 0.75);
+        }
+    }
+}

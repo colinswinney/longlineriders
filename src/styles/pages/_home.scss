@@ -1,0 +1,17 @@
+main.home {
+    padding: 80px 15px 0;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+
+    img {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    @media(max-width: 650px) {
+        padding-top: 105px;
+    }
+}

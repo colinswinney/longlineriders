@@ -1,0 +1,38 @@
+.main {
+    padding: 110px 15px 0;
+    text-align: center;
+    min-height: calc(100vh - 110px);
+
+    .border-line {
+        margin: auto auto 30px;
+        display: block;
+        width: 225px;;
+    }
+
+    &.nomatch {
+        background-color: lightyellow;
+    }
+
+    @media(max-width: 650px) {
+        padding-top: 130px;
+    }
+}
+
+// CSS Transition Group
+.main-enter {
+    opacity: 0;
+}
+
+.main-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.main-exit {
+    opacity: 1;
+}
+
+.main-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}

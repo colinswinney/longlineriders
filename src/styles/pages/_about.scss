@@ -1,0 +1,88 @@
+main.about {
+    padding-bottom: 60px;
+    background: -moz-linear-gradient(0deg, #D1A75C 0, #B01F37 49%, #B01F37 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, 0deg, color-stop(0, D1A75C), color-stop(49%, B01F37), color-stop(100%, B01F37));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(0deg, #D1A75C 0,#B01F37 49%, #B01F37 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(0deg, #D1A75C 0, #B01F37 49%, #B01F37 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(0deg, #D1A75C 0, #B01F37 49%, #B01F37 100%);/* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+    background: linear-gradient(0deg, #D1A75C 0, #B01F37 49%, #B01F37 100%);/* W3C */
+    position: relative;
+    overflow: hidden;
+
+
+    > * {
+        color: white;
+    }
+
+    .horseshoe {
+        filter: brightness(0) invert(1);
+        position: absolute;
+        top: 135px;
+        width: 30px;
+
+
+        &.left {
+            left: 15px;
+            transform: rotate(-30deg);
+        }
+
+        &.right {
+            right: 15px;
+            transform: rotate(30deg);
+        }
+
+        // @media (max-width: 749px) {
+        //     display: none;
+        // }
+
+        @media (min-width: 650px) {
+            top: 105px;
+            width: 60px;
+        }
+
+        @media (min-width: 951px) {
+            top: 90px;
+            width: 90px;
+        }
+    }
+
+    .border-line {
+        filter: brightness(0) invert(1);
+    }
+
+    p {
+        margin: auto auto 20px;
+        max-width: 750px;
+        text-align: justify;
+
+        &.dropcap:first-letter {
+            margin: -1.75rem 0.5rem -1.75rem 0;
+            font-size: 6.75rem;
+            float: left;
+        }
+    }
+
+    .image-row {
+        margin: 45px auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            line-height: 0;
+
+            img {
+                width: 150px;
+    
+                &:hover {
+                    transform: scale(.9);
+                }
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 950px) {
+            width: 450px;
+        }
+    }
+}
