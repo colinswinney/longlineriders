@@ -1,5 +1,5 @@
 main.listen {
-    padding-bottom: 0;
+    padding-bottom: 30px;
     background-color: $yellow;
     position: relative;
     z-index: 2;
@@ -155,25 +155,35 @@ iframe.self-titled {
 }
 iframe.millers-cave {
     width: 350px;
-    height: 588px;
+    height: 489px;
+}
+iframe.steel-guitar-rag {
+    width: 350px;
+    height: 489px;
 }
 
 .release--date {
     font-size: 1rem;
 }
 
+.release--meta {
+    margin-bottom: 30px;
+}
+
 .release--link {
-    padding: 30px 0 60px;
+    padding: 30px 0;
+    margin: auto 30px;
     display: inline-block; 
     width: 150px;
-    margin: auto 30px;
+    line-height: 1;
+    vertical-align: top;
 
     a {
         color: $black;
-        line-height: 1;
 
         img {
             border: 2px solid $black;
+            margin-bottom: 5px;
 
             &:hover {
                 transform: scale(0.9);

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 import * as ROUTES from "../constants/routes"
 import Milwaukee from "../images/milwaukee-here-i-come-single-res.jpg"
 import LLR from "../images/long-line-riders-single.jpg"
+import SteelGuitarRag from "../images/steel-guitar-rag-single.jpeg"
+import Drinkin from "../images/dont-come-home-a-drinkin-single.jpeg"
 import Wave from "../components/Wave"
 import Note from "../images/music-note.png"
 
@@ -23,6 +25,19 @@ export default function Millers({...restProps}) {
             <p className="release--meta">Recorded by Kyle Motor<br />
                 MotorCo Recording, Madison, WI<br />
                 March 15, 2020</p>
+
+            <div className="release--link">
+                <Link to={ROUTES.DRINKIN}><img src={Drinkin} width="100" alt="Don't Come Home a Drinkin' single cover"/></Link>
+                <br/>
+                <Link to={ROUTES.DRINKIN}>Don't Come Home a Drinkin'</Link>
+            </div>
+
+            <div className="release--link">
+                <Link to={ROUTES.STEELGUITARRAG}><img src={SteelGuitarRag} width="100" alt="Steel  Guitar Rag single cover"/></Link>
+                <br/>
+                <Link to={ROUTES.STEELGUITARRAG}>Steel Guitar Rag</Link>
+            </div>
+
             <div className="release--link">
                 <Link to={ROUTES.MILWAUKEE}><img src={Milwaukee} width="100" alt="Milwaukee, Here I Come single cover"/></Link>
                 <br/>

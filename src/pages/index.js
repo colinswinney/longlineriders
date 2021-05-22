@@ -8,3 +8,5 @@ export { default as NoMatch } from './no-match';
 export { default as Milwaukee } from './listen-milwaukee';
 export { default as SelfTitled } from './listen-self-titled';
 export { default as Millers } from './listen-millers-cave';
+export { default as SteelGuitarRag } from './listen-steel-guitar-rag';
+export { default as Drinkin } from './listen-dont-come-home-a-drinkin';

@@ -5,6 +5,8 @@ import Note from "../images/music-note.png"
 import Millers from "../images/millers-cave-single.jpg"
 import Milwaukee from "../images/milwaukee-here-i-come-single-res.jpg"
 import LLR from "../images/long-line-riders-single.jpg"
+import SteelGuitarRag from "../images/steel-guitar-rag-single.jpeg"
+import Drinkin from "../images/dont-come-home-a-drinkin-single.jpeg"
 import * as ROUTES from "../constants/routes"
 import Wave from "../components/Wave"
 
@@ -17,6 +19,23 @@ export default function Listen({...restProps}) {
             <img src={Note} className="music-note left" alt="Music Note" />
             <img src={Note} className="music-note right" alt="Music Note" />
             <div className="releases--wrapper">
+                
+                <div className="releases--single">
+                    <div className="releases--cover">
+                        <Link to={ROUTES.DRINKIN}><img src={Drinkin} alt="Don't Come Home a Drinkin' single cover"/></Link>
+                    </div>
+                    <div className="releases--title">
+                        <Link to={ROUTES.DRINKIN}>Don't Come Home a Drinkin'</Link>
+                    </div>
+                </div>
+                <div className="releases--single">
+                    <div className="releases--cover">
+                        <Link to={ROUTES.STEELGUITARRAG}><img src={SteelGuitarRag} alt="Steel Guitar Rag single cover"/></Link>
+                    </div>
+                    <div className="releases--title">
+                        <Link to={ROUTES.STEELGUITARRAG}>Steel Guitar Rag</Link>
+                    </div>
+                </div>
                 <div className="releases--single">
                     <div className="releases--cover">
                         <Link to={ROUTES.MILLERS}><img src={Millers} alt="Miller's Cave single cover"/></Link>

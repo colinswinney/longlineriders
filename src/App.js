@@ -5,7 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group"
 import * as ROUTES from "./constants/routes"
 import Header from "./components/Header"
 import ScrollToTop from "./components/ScrollToTop"
-import { Home, About, Listen, Shows, Contact, NoMatch, Milwaukee, SelfTitled, Millers } from "./pages"
+import { Home, About, Listen, Shows, Contact, NoMatch, Milwaukee, SelfTitled, Millers, SteelGuitarRag, Drinkin } from "./pages"
 
 function App() {
 
@@ -43,6 +43,16 @@ function App() {
     {
       path: ROUTES.MILLERS,
       page: Millers,
+      contentClass: 'listen'
+    },
+    {
+      path: ROUTES.STEELGUITARRAG,
+      page: SteelGuitarRag,
+      contentClass: 'listen'
+    },
+    {
+      path: ROUTES.DRINKIN,
+      page: Drinkin,
       contentClass: 'listen'
     }
   ]
