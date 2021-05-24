@@ -2,62 +2,13 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { TransitionGroup, CSSTransition } from "react-transition-group"
 
-import * as ROUTES from "./constants/routes"
+import routeArray from "./constants/data"
+
 import Header from "./components/Header"
 import ScrollToTop from "./components/ScrollToTop"
-import { Home, About, Listen, Shows, Contact, NoMatch, Milwaukee, SelfTitled, Millers, SteelGuitarRag, Drinkin } from "./pages"
+import { NoMatch } from "./pages"
 
 function App() {
-
-  const routeArray = [
-    {
-      path: ROUTES.HOME,
-      page: Home
-    },
-    {
-      path: ROUTES.ABOUT,
-      page: About
-    },
-    {
-      path: ROUTES.LISTEN,
-      page: Listen
-    },
-    {
-      path: ROUTES.SHOWS,
-      page: Shows
-    },
-    {
-      path: ROUTES.CONTACT,
-      page: Contact
-    },
-    {
-      path: ROUTES.MILWAUKEE,
-      page: Milwaukee,
-      contentClass: 'listen'
-    },
-    {
-      path: ROUTES.SELFTITLED,
-      page: SelfTitled,
-      contentClass: 'listen'
-    },
-    {
-      path: ROUTES.MILLERS,
-      page: Millers,
-      contentClass: 'listen'
-    },
-    {
-      path: ROUTES.STEELGUITARRAG,
-      page: SteelGuitarRag,
-      contentClass: 'listen'
-    },
-    {
-      path: ROUTES.DRINKIN,
-      page: Drinkin,
-      contentClass: 'listen'
-    }
-  ]
-
-
   return (
     <div className="app">
       <BrowserRouter>

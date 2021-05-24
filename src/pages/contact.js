@@ -1,17 +1,17 @@
 import React from "react"
 import FormSpree from "../components/FormSpree"
 import Border from "../images/border-line.png"
-import Facebook from "../images/facebook.svg"
-import Instagram from "../images/instagram.svg"
-import YouTube from "../images/youtube.svg"
-import Bandcamp from "../images/bandcamp.svg"
+import Facebook from "../images/svg/facebook.svg"
+import Instagram from "../images/svg/instagram.svg"
+import YouTube from "../images/svg/youtube.svg"
+import Bandcamp from "../images/svg/bandcamp.svg"
 
 export default function Contact({...restProps}) {
     return (
         <main {...restProps}>
-            <div id="stars" class="stars"></div>
-            <div id="stars2" class="stars"></div>
-            <div id="stars3" class="stars"></div>
+            <div id="stars" className="stars"></div>
+            <div id="stars2" className="stars"></div>
+            <div id="stars3" className="stars"></div>
 
             <div id="contact-content">
                 <h1>Contact</h1>

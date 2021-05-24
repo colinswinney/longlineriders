@@ -5,8 +5,9 @@ export { default as Shows } from './shows';
 export { default as Contact } from './contact';
 export { default as NoMatch } from './no-match';
 
-export { default as Milwaukee } from './listen-milwaukee';
-export { default as SelfTitled } from './listen-self-titled';
-export { default as Millers } from './listen-millers-cave';
-export { default as SteelGuitarRag } from './listen-steel-guitar-rag';
-export { default as Drinkin } from './listen-dont-come-home-a-drinkin';
+// albums 
+export { default as Milwaukee } from './albums/listen-milwaukee';
+export { default as SelfTitled } from './albums/listen-self-titled';
+export { default as Millers } from './albums/listen-millers-cave';
+export { default as SteelGuitarRag } from './albums/listen-steel-guitar-rag';
+export { default as Drinkin } from './albums/listen-dont-come-home-a-drinkin';

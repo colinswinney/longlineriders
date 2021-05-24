@@ -11,6 +11,16 @@
 
     &.nomatch {
         background-color: lightyellow;
+
+        a {
+            color: $blue;
+        }
+
+        .cowboy {
+            filter: brightness(0);
+            width: 300px;
+            margin: 30px auto;
+        }
     }
 
     @media(max-width: 650px) {
