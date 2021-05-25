@@ -69,21 +69,35 @@ main.about {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 750px;
 
         a {
             line-height: 0;
+            flex-grow: 1;
+            width: 33%;
 
             img {
-                width: 150px;
+                width: 100%;
+                // flex-grow: 1;
+                // width: 33%;
     
                 &:hover {
-                    transform: scale(.9);
+                    transform: scale(.95);
                 }
             }
         }
 
-        @media (min-width: 600px) and (max-width: 950px) {
-            width: 450px;
-        }
+        // @media (min-width: 600px) and (max-width: 900px) {
+        //     max-width: 450px;
+        // }
+
+        // @media (min-width: 901px) {
+            
+        //     a {
+        //         img {
+        //             width: 250px;
+        //         }
+        //     }
+        // }
     }
 }

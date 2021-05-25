@@ -100,7 +100,7 @@ main.listen {
             color: $black;
 
             .releases--cover {
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 box-sizing: border-box;
 
                 img {
@@ -112,6 +112,7 @@ main.listen {
 
             .releases--title {
                 font-family: "Ultra", serif;
+                text-transform: uppercase;
                 font-size: 1.5rem;
                 line-height: 1;
             }
@@ -119,7 +120,7 @@ main.listen {
             &:hover, &:focus {
                 .releases--cover {
                     img {
-                        transform: scale(0.9);
+                        transform: scale(0.95);
                     }
                 }
             }
@@ -157,33 +158,50 @@ iframe.steel-guitar-rag {
     width: 350px;
     height: 489px;
 }
+iframe.drinkin {
+    width: 250px;
+    height: 489px;
+}
 
+@media (max-width: 600px) {
+    main.listen {
+        .releases--wrapper {
+            .releases--single {
+                max-width: 250px;
+                
+                .releases--title {
+                    font-size: 1.25rem;
+                }
+            }   
+        }
+    }
+    
+
+    iframe.milwaukee {
+        width: 250px;
+        height: 522px;
+    }
+    iframe.self-titled {
+        width: 250px;
+        height: 588px;
+    }
+    iframe.millers-cave {
+        width: 250px;
+        height: 489px;
+    }
+    iframe.steel-guitar-rag {
+        width: 250px;
+        height: 489px;
+    }
+    iframe.drinkin {
+        width: 250px;
+        height: 489px;
+    }
+}
 .release--date {
     font-size: 1rem;
 }
 
 .release--meta {
     margin-bottom: 30px;
-}
-
-.release--link {
-    padding: 30px 0;
-    margin: auto 30px;
-    display: inline-block; 
-    width: 150px;
-    line-height: 1;
-    vertical-align: top;
-
-    a {
-        color: $black;
-
-        img {
-            border: 2px solid $black;
-            margin-bottom: 5px;
-
-            &:hover {
-                transform: scale(0.9);
-            }
-        }
-    }
 }

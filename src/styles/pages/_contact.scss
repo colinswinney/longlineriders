@@ -117,39 +117,43 @@ main.contact {
 
         .form {
             margin: auto auto 60px;
-            max-width: 900px;
             display: flex;
             flex-wrap: wrap;
             font-size: 1.5rem;
+            max-width: 450px;
+
+            // @media (max-width: 600px) {
+            //     max-width: 275px;
+            // }
 
             .form--group {
-                width: 50%;
+                margin: 15px auto;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
 
                 label {
-                    padding: 15px;
                     color: white;
                     font-family: "Ultra", serif;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    flex-grow: 1;
+                    width: 100%;
                 }
 
                 input {
                     padding: 15px;
+                    flex-grow: 1;
                     margin: auto;
-                    width: 250px;
-                    min-width: 200px;
                     background-color: $white;
-                    // border-radius: 30px;
                     border: 3px solid $orange;
                     text-align: center;
-                    display: block;
                     outline: none;
                     line-height: 1.5rem;
                     transition: all 0.2s ease;
 
                     &:focus {
                         text-align: left;
-                        width: 350px;
                     }
                 }
 
@@ -162,36 +166,23 @@ main.contact {
                   }
 
                 &.message {
-                    margin: 30px 0;
-                    width: 100%;
-
                     textarea {
-                        margin: auto;
                         padding: 15px;
-                        width: 500px;
-                        max-width: calc(100% - 30px);
-                        height: 70px;
+                        margin: auto;
+                        height: 150px;
+                        width: 100%;
                         background-color: $white;
-                        // border-radius: 30px;
                         border: 3px solid $orange;
-                        display: block;
                         align-self: baseline;
                         outline: none;
                         transition: all 0.2s ease;
-
-                        &:focus {
-                            width: 700px;
-                        }
                     }
                 }
             }
 
             .submit {
                 padding: 15px;
-                margin: 0 auto 5px;
-                width: 200px;
-                display: block;
-                // border-radius: 30px;
+                margin: 15px auto -10px;
                 font-family: "Ultra", serif;
                 color: $white;
                 border: 3px solid $white;
@@ -211,6 +202,7 @@ main.contact {
             .error {
                 text-transform: uppercase;
                 width: 100%;
+                margin-top: -10px;
 
                 p {
                     padding: 15px;
@@ -304,7 +296,6 @@ main.contact {
 
             @media(max-width: 900px) {
                 .form--group {
-                    width: 100%;
 
                     &.email {
                         margin-top: 30px;
