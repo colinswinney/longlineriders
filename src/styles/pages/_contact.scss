@@ -88,11 +88,11 @@ main.contact {
         .contact--social-wrap {
             margin: 45px auto;
             display: flex;
-            width: 450px;
+            justify-content: space-evenly;
+            width: 360px;
 
             .contact--social-item {
                 padding: 0 15px;
-                width: 25%;
 
                 img {
                     width: 60px;
@@ -104,7 +104,7 @@ main.contact {
             }
 
             @media (max-width: 500px) {
-                width: auto;
+                width: 240px;
 
                 .contact--social-item {
                     
@@ -151,10 +151,6 @@ main.contact {
                     outline: none;
                     line-height: 1.5rem;
                     transition: all 0.2s ease;
-
-                    &:focus {
-                        text-align: left;
-                    }
                 }
 
                 [placeholder]:focus::-webkit-input-placeholder { 
@@ -168,7 +164,6 @@ main.contact {
                 &.message {
                     textarea {
                         padding: 15px;
-                        margin: auto;
                         height: 150px;
                         width: 100%;
                         background-color: $white;
@@ -176,13 +171,18 @@ main.contact {
                         align-self: baseline;
                         outline: none;
                         transition: all 0.2s ease;
+                        text-align:center;
+
+                        &:focus {
+                            text-align: left;
+                        }
                     }
                 }
             }
 
             .submit {
                 padding: 15px;
-                margin: 15px auto -10px;
+                margin: 0 auto -10px;
                 font-family: "Ultra", serif;
                 color: $white;
                 border: 3px solid $white;
@@ -290,15 +290,6 @@ main.contact {
                         left: 0;
                         right: 0;
                         text-align: center;
-                    }
-                }
-            }
-
-            @media(max-width: 900px) {
-                .form--group {
-
-                    &.email {
-                        margin-top: 30px;
                     }
                 }
             }
