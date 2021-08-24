@@ -4,7 +4,8 @@ import MilwaukeeImg from "../images/albums/milwaukee-here-i-come-single-res.jpg"
 import LLRImg from "../images/albums/long-line-riders-single.jpg"
 import SteelGuitarRagImg from "../images/albums/steel-guitar-rag-single.jpeg"
 import DrinkinImg from "../images/albums/dont-come-home-a-drinkin-single.jpeg"
-import { Home, About, Listen, Shows, Contact, Milwaukee, SelfTitled, Millers, SteelGuitarRag, Drinkin } from "../pages"
+import WashedImg from "../images/albums/i-washed-my-face-in-the-morning-dew-single.jpeg"
+import { Home, About, Listen, Shows, Contact, Milwaukee, SelfTitled, Millers, SteelGuitarRag, Drinkin, Washed } from "../pages"
 
 export const routeArray = [
     {
@@ -61,6 +62,13 @@ export const routeArray = [
       contentClass: 'listen',
       title: "Don't Come Home a Drinkin'",
       img: DrinkinImg   
+    },
+    {
+      path: ROUTES.WASHED,
+      page: Washed,
+      contentClass: 'listen',
+      title: "I Washed My Face in the Morning Dew",
+      img: WashedImg   
     }
   ]
 

@@ -87,15 +87,16 @@ main.listen {
     }
 
     .releases--wrapper {
-        margin-top: 90px;
+        margin: 4rem auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         z-index: 1;
         position: relative;
+        gap: 4rem;
 
         .releases--single {
-            margin: 0 75px 60px;
+            margin: 0;
             max-width: 300px;
             color: $black;
 
@@ -159,7 +160,11 @@ iframe.steel-guitar-rag {
     height: 489px;
 }
 iframe.drinkin {
-    width: 250px;
+    width: 350px;
+    height: 489px;
+}
+iframe.washed {
+    width: 350px;
     height: 489px;
 }
 
@@ -197,10 +202,14 @@ iframe.drinkin {
         width: 250px;
         height: 414px;
     }
+    iframe.washed {
+        width: 250px;
+        height: 414px;
+    }
 }
 .release--date {
     font-size: 1rem;
-    margin-top: 0;
+    margin-top: 0.5rem;
 }
 
 .release--meta {

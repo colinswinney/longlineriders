@@ -11,3 +11,4 @@ export { default as SelfTitled } from './albums/listen-self-titled';
 export { default as Millers } from './albums/listen-millers-cave';
 export { default as SteelGuitarRag } from './albums/listen-steel-guitar-rag';
 export { default as Drinkin } from './albums/listen-dont-come-home-a-drinkin';
+export { default as Washed } from './albums/listen-i-washed-my-face-in-the-morning-dew';
